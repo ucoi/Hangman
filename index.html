@@ -1,11 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="main.css">
+    <title>Hangman</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="game-info">
+        <div class="game-name">
+          <div class="category">Word From :<span></span></div>
+        </div>
+      </div>
+      <hr />
+      <div class="row">
+        <div class="hangman-draw">
+          <div class="the-draw">
+            <div class="stand"></div>
+            <div class="hang"></div>
+            <div class="rope"></div>
+            <div class="man">
+              <div class="head"></div>
+              <div class="body"></div>
+              <div class="hands"></div>
+              <div class="legs"></div>
+            </div>
+          </div>
+          <div class="letters"></div>
+        </div>
+      </div>
+      <hr />
+      <div class="letter-guess"></div>
+    </div>
+  </body>
 </html>

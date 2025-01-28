@@ -1,0 +1,143 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+    margin: 20px auto;
+    width: 1000px;
+}
+.row{
+    display: flex;
+}
+hr{
+    border: 1px solid black;
+}
+
+.game-info{
+    display: flex;
+}
+
+.game-info .game-name{
+    flex: 1;
+}
+
+.game-info .category{
+    flex: 1;
+    text-align: right;
+}
+.game-info .category span{
+    text-transform: capitalize;
+    color: red;
+    font-weight: bold;
+}
+.hangman-draw{
+    flex: 1;
+    background-color: white;
+    padding: 20px;
+    height: 324px;
+}
+.hangman-draw .the-draw{
+    width: 60px;
+    height: 280px;
+    border-bottom: 4px solid #222;
+    position: relative;
+    margin: auto;
+
+}
+.hangman-draw .stand::before{
+    content: '';
+    position: absolute;
+    border-style: solid ; /* Added border-style */
+    height: 100%;
+    left: 50%;
+    margin-left: -2px;
+}
+.hangman-draw .hang::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    left: 30px;
+    border-color: #222;
+    height: 4px;
+    background-color: #222;
+    top: 20px;
+}
+.hangman-draw .hang::after{
+    content: '';
+    position: absolute;
+    width: 4px;
+    left: 130px;
+    height: 30px;
+    background-color: #222;
+    top: 20px;
+}
+.hangman-draw .rope{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    border: 4px dashed #222;
+}
+.hangman-draw .man .head{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #222;
+    position: absolute;
+    top: 60px;
+    left: 110px;
+}
+.hangman-draw .man .body{
+    width: 4px;
+    background-color: #222;
+    height: 120px;
+    border: 2px solid #222;
+    position: absolute;
+    top: 108px;
+    left: 132px;
+}
+.hangman-draw .man .hands:before{
+    content: '';
+    width: 50px;
+    position: absolute;
+    height: 4px;
+    background-color: #222;
+    left: 129px;
+    top: 153px;
+    transform: rotate(143deg);
+}
+.hangman-draw .man .hands:after{
+    content: '';
+    width: 50px;
+    position: absolute;
+    height: 4px;
+    background-color: #222;
+    left: 86px;   
+     top: 153px;
+    transform: rotate(212deg);
+}
+
+.hangman-draw .man .legs:after{
+    content: '';
+    width: 50px;
+    position: absolute;
+    height: 4px;
+    background-color: #222;
+    left: 86px;
+    top: 236px;
+    transform: rotate(150deg);
+}
+.hangman-draw .man .legs:before{
+    content: '';
+    width: 50px;
+    position: absolute;
+    height: 4px;
+    background-color: #222;
+    left: 127px;
+    top: 237px;
+    transform: rotate(43deg);
+}
