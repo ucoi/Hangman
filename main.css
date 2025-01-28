@@ -141,3 +141,23 @@ hr{
     top: 237px;
     transform: rotate(43deg);
 }
+.letters{
+    flex: 1;
+    text-align: center;
+    margin: 49px 0;
+}
+.letters .letter-box{
+    width: 55px;
+    height: 55px;
+    display: inline-block;
+    background-color: rgb(84, 101, 59);
+    color: white;
+    font-size: 24px;
+    margin-right: 10px;
+    line-height: 55px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 12px;
+
+}
